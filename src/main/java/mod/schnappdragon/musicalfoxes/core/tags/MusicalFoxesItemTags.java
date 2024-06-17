@@ -10,6 +10,6 @@ public class MusicalFoxesItemTags {
     public static final TagKey<Item> FOX_CAN_PLAY = makeTag("fox_can_play");
 
     private static TagKey<Item> makeTag(String id) {
-        return ItemTags.create(new ResourceLocation(MusicalFoxes.MODID, id));
+        return ItemTags.create(ResourceLocation.fromNamespaceAndPath(MusicalFoxes.MODID, id));
     }
 }
